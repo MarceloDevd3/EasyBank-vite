@@ -16,7 +16,7 @@ export default function Nav() {
         <div id="navegation-row">
              <a href="index.html"><img src={logo} alt="Esay Bank Logo"/></a>
              <button id="nav-btn" onClick={hundleNavToggle}><img src={icon} alt="close up icon"/></button>
-             <nav id="nav-container">
+             <nav id="nav-container" className={nav ? 'nav active' : 'nav'}>
                <ul>
                   <li className="nav-item" ><a className="nav-link" href="#">Home</a></li>
                   <li className="nav-item" ><a className="nav-link" href="#">About</a></li>
