@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo02.svg";
 
 export default function Rodape() {
     return (
@@ -40,7 +40,7 @@ export default function Rodape() {
            </div>
            <div id="footer-final-content">
              <button className="btn-green">Request Invite</button>
-             <p><small id="copyright">
+             <p id="copyright"><small >
              © Easybank. All Rights Reserved</small></p>
            </div>
         </footer>

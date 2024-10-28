@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:100% ;
+}
+
+:root{
+     --Dark-Blue: hsl(233, 26%, 24%);
+     --Lime-Green: hsl(136, 65%, 51%);
+     --Bright-Cyan: hsl(192, 70%, 51%);
+    /*### Neutral*/
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font: 1.125em;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+button, li {
+    cursor: pointer;
+}
+
+
+/*mobile 375 version part 1*/
+
+
+/*navegation zone*/
+
+
+#navegation-row {
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+}
+
+.shadow {
+    display: none;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    width: 100vw;
+    height: 84vh;
+}
+
+.shadow.active {
+    display: flex;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    opacity: .7;
+}
+
+#nav-btn {
+    border: none;
+    background-color: transparent;
+}
+
+#navegation-row .btn-green {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+.nav.active {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+    width: 87%;
+    height: 300px;  
+    border-radius: 6px;
+    background-color: var(--Very-Light-Gray);
+}
+
+#nav-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+}
+
+ul .nav-item {
+  margin: .5em 0;
+  font-size: 1.3em;
+}
+
+ul .nav-item .nav-link {
+  color: var(--Dark-Blue);
+}
+
+/*Header*/
+
+#EasyBank-header {
+    display: flex;
+    flex-direction: column-reverse;
+    background: url(./assets/images/bg-intro-mobile.svg) no-repeat;
+    background-size: 100% 67%;
+    height: 87vh;
+    overflow: hidden;
+}
+
+#container-image img {
+    position: relative;
+    top: 1.5%;
+    left: 2em;
+    width: 90%;
+}
+
+#EasyBank-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: .1em;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+#EasyBank-information #EasyBank-title {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: .7em 0 .5em 0;
+    width: 300px;
+    color: var(--Dark-Blue);
+}
+
+#EasyBank-information #EasyBank-info {
+    width: 370px;
+    padding-bottom: 1em;
+    color: var(--Grayish-Blue);
+}
+
+/*btn-green*/  
+
+.btn-green {
+    background: linear-gradient(130deg, var(--Lime-Green),var(--Bright-Cyan)) ;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.btn-green:hover {
+    opacity: .7;
+    transition:  opacity ease-in 1s;
+}
+
+/*main EasyabnkLevel1 and 2*/
+
+main #EasybankLevel1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4em;
+    background-color: var(--Light-Grayish-Blue);
+}
+main #EasybankLevel1 {
+    padding: 5em 2em;
+}
+
+main #EasybankLevel1 #Easybank-title {
+    font-size: 1.6em;
+    font-weight: 400;
+    width: 250px;
+    margin-bottom: 1em;
+    color: var(--Dark-Blue);
+}
+
+main #EasybankLevel1 #Easybank-sub-info {
+    width: 340px;
+    margin: .5em 0;
+    line-height: 25px;
+    padding-bottom: 4em;
+    color: var(--Grayish-Blue);
+}
+
+main #EasybankLevel1 #level1-grid {
+    display: grid;
+    grid-column: 150px;
+    row-gap: 3em;
+    padding: 0 1.5em;
+    margin-top: 1em;
+}
+
+.mini-card .mini-img {
+    margin: 1em 0;
+}
+
+.mini-card-content .mini-title-card {
+    margin: 1.1em 0;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+}
+
+.mini-info {
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+/*start of level 2*/
+
+main #EasybankLevel2 {
+    padding: 5.2em 2em;
+    background-color: var(--Very-Light-Gray);
+}
+
+main #EasybankLevel2 #EasybankLevel2-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+}
+
+main #EasybankLevel2 #level2-grid {
+    margin-top: 2.2em;
+    padding: 0 2em;
+    color: var(--Dark-Blue);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 5em;
+}
+
+.EasyBank-card {
+    width: 340px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.EasyBank-card .EasyBank-img-container img {
+    max-width: 100%;
+    border-radius: 7px 7px 0 0 ;
+} 
+
+.EasyBank-card .EasyBank-content {
+    padding: 0 2em;
+    margin-top: 2em;
+}
+
+.EasyBank-content .sub-title {
+    font-size: 1.1em;
+    margin: .5em 0;
+    cursor: pointer;
+}
+
+.EasyBank-content .sub-title:hover {
+    color: var(--Lime-Green);
+    opacity: .8;
+}
+
+.EasyBank-content .EasyBank-title {
+    font-size: .7em;
+    margin: .4em 0;
+}
+
+
+/*rodape*/
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.7em 0;
+    background-color: var(--Dark-Blue);
+}
+
+#rodape-row #icon-rows{
+    display: flex;
+    justify-content: center;
+}
+
+#icon-rows .icon {
+    margin: 1em .5em;
+}
+
+#icon-rows .icon i {
+    font-size: 1.3em;
+    color: var(--White);
+}
+
+#icon-rows .icon:hover i {
+    color: var(--Lime-Green);
+}
+
+#footer-nav-container #grid-container {  
+    margin: 1em 0 1.7em 0;
+}
+
+#footer-nav-container #grid-container .nav-item .nav-link {
+    font-size: .8em;
+    color: var(--Grayish-Blue);
+    margin: .4em 0;
+}
+
+#footer-nav-container #grid-container .nav-item .nav-link:hover {
+    color: var(--Lime-Green);
+    opacity: .8;
+}
+
+
+
+#footer-final-content button {
+    margin: 1em 0;
+}
+
+#footer-final-content #copyright {
+    color: #fff;
+}

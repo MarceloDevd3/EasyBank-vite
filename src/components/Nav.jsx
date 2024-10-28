@@ -14,6 +14,8 @@ export default function Nav() {
 
     return (
         <div id="navegation-row">
+        <div className={nav ? 'shadow active' : 'shadow'}></div>
+           
              <a href="index.html"><img src={logo} alt="Esay Bank Logo"/></a>
              <button id="nav-btn" onClick={hundleNavToggle}><img src={icon} alt="close up icon"/></button>
              <nav id="nav-container" className={nav ? 'nav active' : 'nav'}>

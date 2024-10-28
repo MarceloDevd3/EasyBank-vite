@@ -29,10 +29,18 @@ function App() {
       <Header/>
       <main>
          <section id="EasybankLevel1">
+           <h2 id="Easybank-title">Why choose Easybank?</h2>
+           <p id="Easybank-sub-info">We leverage Open Banking to turn your bank account into your financial hub. Control 
+           your finances like never before.</p>
+           <div id="level1-grid">
            {MINICARD}
+           </div>
          </section>
          <section id="EasybankLevel2">
+           <h3 id="EasybankLevel2-title">Latest Articles</h3>
+           <div id="level2-grid">
            {NORMALCARD}
+           </div>
          </section>
       </main>
       <Rodape/>
