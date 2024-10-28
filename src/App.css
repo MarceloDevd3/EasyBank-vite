@@ -121,9 +121,19 @@ ul .nav-item .nav-link {
     overflow: hidden;
 }
 
-#container-image  img {
+/*corrigir erro ao rola a pagina*/
+
+
+#container-image  {
     position: relative;
-    top: -7.5%;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+#container-image  img {
+    position: absolute;
+    top: -32.4em;
     left: 2em;
     width: 90%;
 }
