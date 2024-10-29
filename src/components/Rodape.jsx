@@ -5,7 +5,7 @@ export default function Rodape() {
     return (
         <footer id="rodape">
            <div id="rodape-row">
-              <img src={logo} alt="logo"/>
+              <img id="footer-logo" src={logo} alt="logo"/>
               <div id="icon-rows">
                 <div className="icon">
                 <i class="fa-brands fa-square-facebook"></i>
@@ -26,16 +26,16 @@ export default function Rodape() {
            </div>
            <div id="footer-nav-container">
               <ul id="grid-container">
-                <li className="nav-item"><a className="nav-link" href="">About Us</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
                 
-                <li className="nav-item"><a className="nav-link" href="">Contact</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
                 
-                <li className="nav-item"><a className="nav-link" href="">Blog</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
                 
-                <li className="nav-item"><a className="nav-link" href="">Careers</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">Careers</a></li>
                 
-                <li className="nav-item"><a className="nav-link" href="">Support</a></li>
-                <li className="nav-item"><a className="nav-link" href="">Privacy Policy</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">Support</a></li>
+                <li className="nav-item"><a className="nav-link" href="#">Privacy Policy</a></li>
               </ul>
            </div>
            <div id="footer-final-content">

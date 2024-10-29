@@ -43,7 +43,7 @@ button, li {
 /*mobile 375 version part 1*/
 
 
-/*navegation zone*/
+/*navegation zone 1*/
 
 
 #navegation-row {
@@ -118,7 +118,6 @@ ul .nav-item .nav-link {
     background: url(./assets/images/bg-intro-mobile.svg) no-repeat;
     background-size: 100% 67%;
     height: 87vh;
-    overflow: hidden;
 }
 
 /*corrigir erro ao rola a pagina*/
@@ -182,7 +181,7 @@ ul .nav-item .nav-link {
 
 /*main EasyabnkLevel1 and 2*/
 
-main #EasybankLevel1 {
+main #EasybankLevel1, main #EasybankLevel1 #block  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,6 +190,10 @@ main #EasybankLevel1 {
     margin-top: 4em;
     background-color: var(--Light-Grayish-Blue);
 }
+
+
+
+
 main #EasybankLevel1 {
     padding: 5em 2em;
 }
@@ -244,6 +247,8 @@ main #EasybankLevel2 {
     padding: 5.2em 2em;
     background-color: var(--Very-Light-Gray);
 }
+
+
 
 main #EasybankLevel2 #EasybankLevel2-title {
     font-size: 1.8em;
@@ -346,5 +351,268 @@ main #EasybankLevel2 #level2-grid {
 }
 
 #footer-final-content #copyright {
-    color: #fff;
+    color: var(--Grayish-Blue);
+}
+
+@media (min-width:768px) {
+
+    #navegation-row  {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav.active {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 17%;
+        left: 22%;
+        width: 50%;
+        background-color: var(--Very-Light-Gray);
+    }
+
+    .shadow {
+        top: 11%;
+        left: 0;
+        height: 54vh;
+    }
+    
+    .shadow.active {
+        display: flex;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+        opacity: .8;
+        z-index: 2;
+    }
+
+    /*Header*/
+
+#EasyBank-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(./assets/images/bg-intro-desktop.svg) no-repeat;
+    background-size:65% 100%;
+    background-position: top -2em right -5rem;
+    height: 75vh;
+}
+
+/*corrigir erro ao rola a pagina*/
+
+#container-image  img {
+    position: absolute;
+    top: -3.4em;
+    left: 1em;
+    width: 100%;
+}
+
+#EasyBank-information {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    position: relative;
+    top: 1em;
+    text-align: left;
+    transform: scale(1.1);
+
+    padding: 1em 4em;
+}
+
+/*main EasybankLevel1*/
+
+
+main #EasybankLevel1, main #EasybankLevel1 #block  {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 2em;
+}
+
+main #EasybankLevel1 #block {
+    margin-left: 2em;
+}
+
+main #EasybankLevel1 #level1-grid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 1fr 1fr;
+    gap: 3em 7rem;
+    padding: 0 1.5em;
+    margin-top: 1em;
+}
+
+main #EasybankLevel1 #Easybank-title {
+    font-size: 2em;
+    width: 450px;
+    margin-bottom: .5em;
+}
+
+main #EasybankLevel1 #Easybank-sub-info {
+    width: 400px;
+    margin: .7em 0;
+}
+
+main #EasybankLevel2 {
+    align-items: flex-start;
+    padding: 5.2em 2em;
+}
+
+main #EasybankLevel2 #EasybankLevel2-title {
+    font-size: 2em;
+}
+
+
+main #EasybankLevel2 #level2-grid {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5em 7em;
+}
+
+
+.EasyBank-card {
+    width: 300px;
+    height: 480px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+
+
+
+
+}
+
+
+@media (min-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /*navegation-bar*/
+
+   
+    .nav,.nav.active {
+        display: block;
+        top: 1%;
+        left: 22%;
+        background-color: transparent;
+    }
+
+    #nav-btn {
+        display: none;
+    }
+
+    #navegation-row .btn-green {
+        display:block;
+    }
+
+    #nav-container ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    ul .nav-item {
+        margin: .6em .5em;
+        font-size: 1.3em;
+      }
+
+    ul .nav-item:hover:after {
+        content: '';
+        position: relative;
+        top: 37px;
+        left: 4px;
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: green;
+    }
+
+   #nav-container > ul .nav-item:hover:nth-of-type(3):after , #nav-container > ul .nav-item:hover:nth-of-type(5):after {
+        width: 68px;  
+    }
+
+    /*header*/
+    
+
+    #container-image  img {
+        position: absolute;
+        top:- 2.4em;
+        left: 8em;
+        width: 90%;
+        overflow: visible;
+    }
+
+    
+    #EasyBank-information {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:center;
+        position: relative;
+        top: 3em;
+        text-align: left;
+        transform: scale(1.2);
+    
+        padding: 1em 7.5em;
+    }
+      
+  /* main #EasybankLevel1*/
+
+    main #EasybankLevel1 #level1-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 3em 7rem;
+        padding: 0 1.5em;
+        margin-top: 1em;
+    }
+
+    main #EasybankLevel2 #level2-grid {
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5em 4em;
+    }
+    
+    .EasyBank-card {
+        width: 270px;
+        height: 480px;
+    }
+
+    #rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2.7em 5rem;
+    }
+
+    #footer-nav-container #grid-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        text-align: left;
+    }
+
+    #rodape-row  {
+     position: relative;
+     top: 1rem;
+   }
+
+    #rodape-row #icon-rows{
+        margin-top: 1em;
+    }
+
+
+    #footer-nav-container  ul .nav-item:hover:after {
+        width: 0px;
+        height: 0px;
+    }
+
+    
 }
