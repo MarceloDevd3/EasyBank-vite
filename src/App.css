@@ -47,17 +47,20 @@ button, li {
 
 
 #navegation-row {
+    position: absolute;
+    width: 100%;
     background-color: var(--Very-Light-Gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em 2em;
+    z-index: 1;
 }
 
 .shadow {
     display: none;
     position: absolute;
-    top: 11%;
+    top: 4.5em;
     left: 0;
     width: 100vw;
     height: 84vh;
@@ -86,7 +89,7 @@ button, li {
     display: block;
     position: absolute;
     z-index: 1;
-    top: 17%;
+    top: 10rem;
     width: 87%;
     height: 300px;  
     border-radius: 6px;
@@ -131,9 +134,9 @@ ul .nav-item .nav-link {
 
 #container-image  img {
     position: absolute;
-    top: -32.4em;
-    left: 2em;
-    width: 90%;
+    top: -24.4em;
+    left: 4em;
+    width: 72%;
 }
 
 
@@ -522,11 +525,11 @@ main #EasybankLevel2 #level2-grid {
     ul .nav-item:hover:after {
         content: '';
         position: relative;
-        top: 37px;
+        top: 40px;
         left: 4px;
-        display: block;
+        display: flex;
         width: 50px;
-        height: 2px;
+        height: 1px;
         background-color: green;
     }
 
@@ -575,7 +578,11 @@ main #EasybankLevel2 #level2-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 5em 4em;
+        gap: 2em 4em;
+    }
+
+    #level1-grid {
+        padding: 0 7em;
     }
     
     .EasyBank-card {
@@ -593,11 +600,15 @@ main #EasybankLevel2 #level2-grid {
 
     #footer-nav-container #grid-container {  
         display: grid;
+        position: relative;
+        left: -7em;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
         margin: 0;
         text-align: left;
     }
+
+  
 
     #rodape-row  {
      position: relative;
@@ -605,13 +616,22 @@ main #EasybankLevel2 #level2-grid {
    }
 
     #rodape-row #icon-rows{
-        margin-top: 1em;
+        margin-top: 2em;
     }
 
 
     #footer-nav-container  ul .nav-item:hover:after {
         width: 0px;
         height: 0px;
+    }
+
+    #footer-final-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-final-content .btn-green {
+        margin-bottom: 2em;
     }
 
     
