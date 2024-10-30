@@ -360,12 +360,9 @@ main #EasybankLevel2 #level2-grid {
 @media (min-width:768px) {
 
     /*
-    #navegation-row  {
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-    }
+    
     */
+    
 
     .nav.active {
         display: block;
@@ -591,6 +588,13 @@ main #EasybankLevel2 #level2-grid {
         width: 270px;
         height: 480px;
     }
+
+
+    main #EasybankLevel2 {
+        align-items: flex-start;
+        padding: 2.2em 2em;
+    }
+    
 
     #rodape {
         display: flex;
